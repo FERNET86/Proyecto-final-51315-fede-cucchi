@@ -1,0 +1,290 @@
+@import url(@import url ('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    /*reset*/
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
+/*selectores de etiqueta 
+  selectores de id
+  selectores de clases */
+
+
+/*los textos/fotos de todas las paginas, menos el index son tipo "lorem", no son definitivos y tengo problemas para ubicar las fotos, pero creo que con un poco de mas practica y tiempo podre*/
+
+
+  body{
+    background-color: #333e49a3;
+  }
+
+  header{
+    background-color: #004c96;
+  }
+  
+  .logo{
+    margin: 20px;
+    width: 120px;
+  }
+
+  .redesSociales {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    border-bottom: 1px solid white;
+    text-align: right;
+  }
+
+  .redesSociales img {
+    width: 30px;
+  }
+
+  .navegacion {
+    width: 90% !important;
+    margin-right: auto !important; 
+    margin-left: auto !important; 
+    display: flex !important; 
+    justify-content: space-between !important;  
+    align-items: flex-end !important; 
+  }
+
+  .menu {
+    display: flex !important;
+    justify-content: flex-end !important; 
+    flex-wrap: wrap !important;
+    height: 55px !important;
+    margin-right: 50px !important; 
+  }
+
+  .menu a {
+    padding: 20px !important;
+    text-decoration: none !important; 
+    color: white !important; 
+    text-align: center !important; 
+    font-weight: bold !important; 
+    text-transform: uppercase !important; 
+  }
+
+  .anchofoto{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+  }
+
+  .rowindex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px ;
+  }
+
+  .caratulaservicios{
+    width: 100%;
+    height:500px;
+    display: flex;
+    text-align: center;
+  } 
+
+  .servicios1{
+    width: 100%;
+    height: 280px;
+    background-color: #001c3784;
+  }
+
+  .servicios1text{
+    text-align: center;
+    vertical-align: middle;
+    padding: 6%;
+    font-size: x-large;
+    color: white;
+  }
+
+  .card {
+    background-color: transparent;
+  }
+
+  .sericios2{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .logisticacentral{
+    width: 100%;
+    height:500px;
+    display: flex;
+    text-align: center;
+    background-size: cover;
+    }   
+
+  .logistica2fotos{
+    width: 100%;
+    margin: auto;
+    background-color: #001c3784;
+    display: flex;
+    justify-content: center;
+    } 
+
+  .fotoindexlog{
+    width: 30%;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: top;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    }
+
+  .queres{
+    text-align: center;
+  }
+  .box{
+    width: 30% !important;
+    margin-left: 30px;
+  } 
+
+  form {
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 1px;
+    margin: 0 auto;
+    width: 300px;
+    }
+
+  input, textarea{
+    outline: none;
+    width: 280px;
+  }
+
+  .field{
+    border: solid 1px #ccc;
+    padding: 10px;
+
+  }
+  .field:focus{
+    border-color: #18a383;
+  }
+
+  .center-content{
+    text-align: center;
+    color: #004c96;
+  }
+
+  .bottom{
+    color: #004c96;
+  }
+
+  .mapa1{
+    padding: 40px;
+    margin: 10px 10px 10px 10px;
+
+  }
+
+  .mapa{
+  text-align: center;
+  font-size: x-small;
+  width: 30%;
+  height: 30%;
+  }
+
+  .queres1{
+    text-align: center;
+    background-color: #004c96;
+    padding: 10px;
+  }
+
+footer{
+    background-color: #004c96;
+  }
+
+  .sucursalesfooter{
+    font-size: medium;
+    padding: 10px;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .containerfooter{
+    width: 100%;
+    height: 130px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+  .hijocontainerfooter{
+    width: 29%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    vertical-align: top;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    align-self: center;
+    }
+  .textofooterlogo{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+    font: -webkit-small-control;
+  }
+
+  .derechos{
+    font-size: small;
+    text-align: center;
+  }
+
+
+@media screen and (max-width: 768px) {
+
+  .centrado{
+    top: 40%;
+  }
+
+  .servicios1text{
+  font-size: unset ;
+  }
+  .card{
+  flex-direction: column;
+  }
+
+  .indexcards{
+    width: 100%;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+  .box{
+  width: 100% !important; 
+  margin-left: auto !important; 
+  }
+  .containerfooter{
+    width: 40%;
+  }
+  .hijocontainerfooter{
+    align-self: normal;
+    padding: 0cm;
+    }
+  .logo{
+  width: 50px;
+
+  }
