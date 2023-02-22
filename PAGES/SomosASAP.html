@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="../ASSESTS/img/favicon.ico.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/estilos.css">
     <title> ASAP | Tu socio comercial</title>
 </head>
@@ -16,20 +17,37 @@
             <a href="https://www.facebook.com"><img src="https://cdn.icon-icons.com/icons2/555/PNG/512/facebook_icon-icons.com_53612.png" /></a>
             <a href="https://www.linkedin.com"><img src="https://cdn.icon-icons.com/icons2/642/PNG/512/linkedin_icon-icons.com_59208.png" /></a>
         </div>
-        <div class="navegacion">
-            <a href="../index.html"><img class="logo" src="../ASSESTS/img/Logoasap.png" alt="logo"/></a>
-        <nav class="menu">
-            <a href="../index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="Logistica.html">Logistica</a>                
-            <a href="SomosASAP.html">#SomosASAP</a>
-            <a href="contacto.html">Contacto</a>                
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="logo" src="../ASSESTS/img/Logoasap.png" alt="logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navegacion">
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="Logistica.html">Logistica</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="SomosASAP.html">#Somosasap</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="contacto.html">contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </nav>
-        </div>
         </header>
     <main>
         <section>
-            <div class="caratulaservicios"><img class="anchofoto img-fluid" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="SERVICIOS">
+            <div class="caratulaservicios"><img class="anchofoto img-fluid" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="SOMOSASAP">
                 <h1 class="centrado">#SOMOSASAP</h1>
             </div>
         </section>
@@ -41,14 +59,13 @@
             </div>
         </section>
             <div>
-                <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="row row-cols-1 row-cols-md-2 g-4 contenedorsomos">
                     <div class="col box">
                         <div class="card">
                             <img class="rounded-3" src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg" class="card-img-top img-fluid" alt="fotoquienessomos">
                         <div class="card-body queres">
-                            <h5 class="card-title">Quienes Somos? </h5>
-                            <p class="card-text">En la década del 60 Alberto kraft inició su actividad en el área de Comercio Exterior. Cristian y Gabriela se fueron sumando al proyecto iniciado por su padre y en 1996 crean ASAP.
-                            Cada uno de ellos aportó su experiencia profesional y la fuerza necesaria para la expansión regional, impulsando nuevas estrategias de gestión y desarrollo basados en los pilares que nos rigen: CALIDAD, ÉTICA Y TRANSPARENCIA.El compromiso con dichos valores ha permitido consolidar nuestro negocio de manera confiable, logrando una reputación que constituye hoy uno de los activos más relevantes de la Compañía.</p>
+                            <h4 class="card-title">Quienes Somos? </h4>
+                            <p class="card-text">En la década del 60 Alberto kraft inició su actividad en el área de Comercio Exterior. Cristian y Gabriela se fueron sumando al proyecto iniciado por su padre y en 1996 crean ASAP. Cada uno de ellos aportó su experiencia profesional y la fuerza necesaria para la expansión regional, impulsando nuevas estrategias de gestión y desarrollo basados en los pilares que nos rigen: CALIDAD, ÉTICA Y TRANSPARENCIA.El compromiso con dichos valores ha permitido consolidar nuestro negocio de manera confiable.</p>
                         </div>
                         </div>
                     </div>
@@ -56,13 +73,13 @@
                         <div class="card">
                             <iframe class="card-img-top rounded-3 " width="560" height="315" src="https://www.youtube.com/embed/0gGXxdonU8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="card-body queres">
-                            <h5 class="card-title">Fundacion Empujar</h5>
+                            <h4 class="card-title">Fundacion Empujar</h4>
                             <p class="card-text">Es una organización sin fines de lucro conformada por un grupo de empresas y equipo de voluntariado que, agrupados en localidades, capacitamos y fortalecemos a jóvenes de 18 a 24 años en competencias y habilidades para su inserción laboral formal. Luego de la fase de capacitación, iniciamos un proceso de acompañamiento al grupo de egresados, siendo puente entre las empresas y sus posibles oportunidades de contratación. </p>
                         </div>
                         </div>
                     </div>
                     <div class="box">
-                        <h2 class="queres">QUERES TRABAJAR CON NOSOTROS</h2>
+                        <h3 class="queres">QUERES TRABAJAR CON NOSOTROS</h3>
                         <form action="insertar.php" class="center-content" method="post" enctype="multipart/form-data" >
                             <p>Nombre y Apellido:</p>
                             <input type="text" class="field"> <br>

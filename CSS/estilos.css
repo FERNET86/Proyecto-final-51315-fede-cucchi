@@ -12,7 +12,7 @@
   selectores de clases */
 
 
-/*los textos/fotos de todas las paginas, menos el index son tipo "lorem", no son definitivos y tengo problemas para ubicar las fotos, pero creo que con un poco de mas practica y tiempo podre*/
+/*todas las paginas estan escritorio/mobile ( menos contacto que tiene las secciones/div, pero hay que ordenarlas para escritorio/mobile )*/
 
 
   body{
@@ -22,28 +22,31 @@
   header{
     background-color: #004c96;
   }
-  
-  .logo{
-    margin: 20px;
-    width: 120px;
-  }
 
   .redesSociales {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    height: 50px;
+    width: 100%;
+    padding: 8px 25px;
     border-bottom: 1px solid white;
     text-align: right;
   }
 
   .redesSociales img {
-    width: 30px;
+    width: 27px;
+    margin: 4px;
+  }
+
+  .container-fluid{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+  }
+
+  .logo{
+    margin: 20px;
+    width: 120px;
   }
 
   .navegacion {
-    width: 90% !important;
-    margin-right: auto !important; 
     margin-left: auto !important; 
     display: flex !important; 
     justify-content: space-between !important;  
@@ -54,18 +57,24 @@
     display: flex !important;
     justify-content: flex-end !important; 
     flex-wrap: wrap !important;
-    height: 55px !important;
-    margin-right: 50px !important; 
   }
 
   .menu a {
     padding: 20px !important;
     text-decoration: none !important; 
     color: white !important; 
-    text-align: center !important; 
+    text-align: right !important; 
     font-weight: bold !important; 
     text-transform: uppercase !important; 
   }
+
+  .caratulaservicios{
+    position: relative;
+    width: 100%;
+    height:500px;
+    display: flex;
+    text-align: center;
+  } 
 
   .anchofoto{
     width: 100%;
@@ -88,16 +97,32 @@
     margin: 20px ;
   }
 
-  .caratulaservicios{
-    width: 100%;
-    height:500px;
-    display: flex;
-    text-align: center;
+  .card {
+    background-color: transparent;
+  }
+
+  .indexfoto1{
+    margin-left: 55px;
+  }
+
+  .box{
+    width: 30% !important;
+    margin-left: 30px;
   } 
 
+  .queres{
+    text-align: center;
+  }
+
+  .card.servicios{
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .servicios1{
+    margin: 0;
     width: 100%;
-    height: 280px;
     background-color: #001c3784;
   }
 
@@ -107,53 +132,24 @@
     padding: 6%;
     font-size: x-large;
     color: white;
+    font-weight: bold;
+    margin: 0;
   }
 
-  .card {
-    background-color: transparent;
+  .log5{
+      justify-content: space-evenly
   }
 
-  .sericios2{
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    text-align: center;
+  .bloque2fotoslog{
+    margin-top: 20px;
   }
 
-  .logisticacentral{
+  .contenedorsomos{
     width: 100%;
-    height:500px;
-    display: flex;
-    text-align: center;
-    background-size: cover;
-    }   
-
-  .logistica2fotos{
-    width: 100%;
-    margin: auto;
-    background-color: #001c3784;
-    display: flex;
     justify-content: center;
-    } 
-
-  .fotoindexlog{
-    width: 30%;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    vertical-align: top;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    }
-
-  .queres{
-    text-align: center;
+    margin-top: 20px;
+    margin-block-end: 20px;
   }
-  .box{
-    width: 30% !important;
-    margin-left: 30px;
-  } 
 
   form {
     background-color: white;
@@ -163,48 +159,112 @@
     padding: 1px;
     margin: 0 auto;
     width: 300px;
-    }
+  }
 
-  input, textarea{
-    outline: none;
-    width: 280px;
+  .center-content{
+    text-align: center;
+    color: white;
+    background-color: transparent;
   }
 
   .field{
     border: solid 1px #ccc;
     padding: 10px;
-
+    color: white;
   }
-  .field:focus{
-    border-color: #18a383;
+  
+  input, textarea{
+    outline: none;
+    width: 280px;
   }
-
-  .center-content{
-    text-align: center;
-    color: #004c96;
-  }
-
+  
   .bottom{
     color: #004c96;
   }
 
-  .mapa1{
-    padding: 40px;
-    margin: 10px 10px 10px 10px;
-
+  .field:focus{
+    border-color: #18a383;
   }
 
-  .mapa{
-  text-align: center;
-  font-size: x-small;
-  width: 30%;
-  height: 30%;
+  .contactob{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mapascontenedor{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap; 
+    justify-content: center;
+
+  }
+  .mapascontenedor p, .mapascontenedor h2{
+    text-align: center;
+    font-size: x-small;
+  }
+  .mapa1{
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .mapa1 h2, .mapa1 p {
+    color: white;
+  }
+
+  .mapaimagen{
+    width: 270px;
+    height: 270px;
   }
 
   .queres1{
     text-align: center;
-    background-color: #004c96;
     padding: 10px;
+  }
+
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    background-color: #001c3784;
+  }
+
+  .newsletter form {
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    margin: 0;
+  }
+  
+  .newsletter input[type=text] {
+    border-radius: 5px;
+    width: 330px;
+  }
+  
+  .newsletter input[type=button] {
+    width: 100px;
+    background-color: #004c96;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #001c37;
+  }
+    
+  .newsletter input[type=button]:hover {
+    background-color: white;
+    color: #004c96;
+    border: 1px solid #001c37;
+  }
+
+  .suscribe {
+    padding: 60px 29px;
+    text-align: center;
+    color: white;
+  }
+  .suscribe h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
   }
 
 footer{
@@ -248,16 +308,14 @@ footer{
   }
 
   .derechos{
+    margin: 0;
     font-size: small;
     text-align: center;
+    color: white;
   }
 
 
 @media screen and (max-width: 768px) {
-
-  .centrado{
-    top: 40%;
-  }
 
   .servicios1text{
   font-size: unset ;
@@ -270,20 +328,51 @@ footer{
     width: 100%;
   }
 
+  .indexfoto1{
+    margin: 0;
+  }
+
   .row{
     flex-direction: column;
   }
+
   .box{
   width: 100% !important; 
   margin-left: auto !important; 
   }
+
+  .servrelax{
+  height: 110px;
+  }
+
+  .textlog{
+  height: 150px;
+  }
+
+  .mapascontenedor{
+    flex-direction: column;
+  }
+
+  .newsletter{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .suscribe{
+    width: 100%;
+    padding: 10px 25px;
+    text-align: center;
+  }
+
   .containerfooter{
     width: 40%;
   }
+
   .hijocontainerfooter{
     align-self: normal;
     padding: 0cm;
     }
+    
   .logo{
   width: 50px;
 
