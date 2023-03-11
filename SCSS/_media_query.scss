@@ -18,9 +18,10 @@
         margin-left: auto !important; 
         .container_index_card{
             flex-direction: $direction-column;
-            .index_card_foto_1_3{
+            .container_index_card_foto_1_3{
                 margin: $mar0;
-                width: 100%;
+                height: auto;
+                width: map-get($width, 100);
             } 
             .container_index_card_hijo{
                 width: map-get($width, 100);

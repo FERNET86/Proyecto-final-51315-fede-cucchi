@@ -343,8 +343,9 @@ footer {
     margin-left: auto !important; }
     .container_index .box .container_index_card {
       flex-direction: column; }
-      .container_index .box .container_index_card .index_card_foto_1_3 {
+      .container_index .box .container_index_card .container_index_card_foto_1_3 {
         margin: 0;
+        height: auto;
         width: 100%; }
       .container_index .box .container_index_card .container_index_card_hijo {
         width: 100%; }
