@@ -1,0 +1,131 @@
+@media screen and (max-width: 768px) {
+
+ /* estas son las media query de utilidades - texto de servicios/logistica */
+
+.texto_relax{
+    height: 110px;
+    .texto_importante_ser_log{
+        font-size: unset ;
+        }      
+    }
+
+    /* estas son las media query del index */
+
+.container_index{
+    
+    .box{
+        width: map-get($width, 100) !important;  
+        margin-left: auto !important; 
+        .container_index_card{
+            flex-direction: $direction-column;
+            .index_card_foto_1_3{
+                margin: $mar0;
+                width: 100%;
+            } 
+            .container_index_card_hijo{
+                width: map-get($width, 100);
+            }  
+        }
+    } 
+}
+
+/* estas son las media query de servicios*/
+
+.container_servicios{
+    
+    .box{
+        width: map-get($width, 100) !important;  
+        margin-left: auto !important; 
+        .card.container_servicios_box_hijo{
+            flex-direction: $direction-column;
+                .container_servicios_cards{
+                    width: map-get($width, 100);
+                } 
+            }    
+        }
+    } 
+
+/* estas son las media query de logistica*/
+
+.container_logistica{
+    
+    .container_logistica_box{
+        width: map-get($width, 100) !important;  
+        margin-left: auto !important; 
+        .container_logistica_box_card{
+            flex-direction: $direction-column;
+            }    
+        }
+    } 
+
+/* estas son las media query de somosasap*/
+
+.contenedor_somos{
+
+    .container_somos_box{
+        width: map-get($width, 100) !important;  
+        margin-left: auto !important; 
+        .container_somos_box_card {
+            flex-direction: $direction-column;
+        .quienesfoto{
+        }
+        }
+    }
+    .Container_form{
+        width: map-get($width, 100);  
+    }
+}
+
+/* estas son las media query de contacto */
+
+.contactob{
+
+    .mapascontenedor{
+        flex-direction: $direction-column;
+        .mapa1{
+
+            .mapaimagen{
+
+            }
+        }
+    }
+    .container_cotizador_contacto{
+        margin-top: 20px;
+    }
+}
+
+.newsletter{
+    flex-direction: $direction-column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 300px;
+    .suscribe{
+        width: map-get($width, 100);  
+        padding: 10px 25px;
+        text-align: $align-center;
+    }
+    .newsletter_form{
+        justify-content: center;
+        margin: 50px;
+    }
+}
+
+
+/* estas son las media query del footer */
+
+footer{
+
+        .containerfooter{
+            width: map-get($width, 40);  
+            .hijocontainerfooter{
+                align-self: normal;
+                padding: 0cm;
+                .logo{
+                    width: 50px;
+                    .textofooterlogo{
+                    }
+                }
+            }
+        }
+    }
+}

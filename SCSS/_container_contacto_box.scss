@@ -1,0 +1,138 @@
+.contactob{
+  @include flex-wrap;
+  .mapascontenedor{
+    width: map-get($width, 50);
+    @extend.contactob;
+    justify-content: center;
+    .mapa1{
+      padding: 20px;
+      margin: 15px 40px 10px 20px;
+      .mapaimagen{
+        width: 270px;
+        height: 270px;
+        padding: $pad10px;
+      }
+      h2 {
+        text-align: $align-center;
+        color: $color-texto;
+        font-weight: $font-bold;
+        font-size: medium;
+        border-bottom-style: outset;
+      }
+      p {
+        text-align: $align-center;
+        color: $color-texto;
+        font-size: smaller;
+        margin-top: 15px;
+      }
+    }
+  }
+  .container_cotizador{
+    text-align: $align-center;
+    padding: $pad10px;
+  }
+  .container_cotizador_contacto{
+    text-align: $align-center;
+    color: $color-texto;
+    font-weight: $font-bold;
+    border-bottom-style: outset;
+    margin-top: 120px;
+    margin-block-end: 60px;
+  }
+  .center-content{
+    text-align: $align-center;
+    color: $color-texto;
+    background-color: transparent;
+    margin-top: 30px;
+    .container_cotizador_contacto_hijo{
+      font-weight: $font-bold;
+      padding: 5px;
+      font-size: medium;
+    }
+  }
+  form {
+      background-color: $color-texto;
+      border-radius: 3px;
+      color: #999;
+      font-size: 0.8em;
+      padding: 1px;
+      margin: 0 auto;
+      width: 300px;
+    }
+    .center-content{
+      text-align: $align-center;
+      color: $color-texto;
+      background-color: transparent;
+      margin-top: 30px;
+      .Container_form_queres_hijo{
+        font-weight: $font-bold;
+        padding: 5px;
+      }
+      .field{
+        border: solid 1px #ccc;
+        padding: $pad10px;
+        color: rgba(25, 24, 24, 0.841);
+      }
+      input, textarea{
+        outline: none;
+        width: 280px;
+      }
+      .bottom{
+        color: map-get($color, color-principal);;
+      }
+      .field:focus{
+        border-color: #18a383;
+      }   
+    }
+}
+
+/* este es el box de newsletter*/
+
+.newsletter {
+    display: $flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    background-color: map-get($color, color-terciario);
+    .suscribe {
+      text-align: $align-center;
+      color: $color-texto;
+      padding: 60px 29px;
+      h2 {
+        font-weight: $font-bold;
+        font-size: 1.5em;
+        margin: $mar0;
+        color: $color-texto;
+      }
+  } 
+    .newsletter_form {
+      width: map-get($width, 50);
+      background-color: transparent;
+      display: $flex;
+      margin: $mar0;
+      input[type=text] {
+        border-radius: 5px;
+        width: 330px;
+      }
+      input[type=button] {
+        width: 100px;
+        background-color: map-get($color, color-principal);
+        font-weight: $font-bold;
+        color: $color-texto;
+        border: 1px solid map-get($color, color-terciario);
+      }
+      input[type=button]:hover {
+        background-color: $color-blanco;
+        color: map-get($color, color-principal);
+        border: 1px solid map-get($color, color-terciario);
+      }
+      .correo_electronico{
+        border: solid 1px #ccc;
+        padding: 10px;
+        color: black;
+      }
+  }   
+}
+
+
+  

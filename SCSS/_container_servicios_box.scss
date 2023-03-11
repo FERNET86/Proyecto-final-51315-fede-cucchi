@@ -1,0 +1,18 @@
+.container_servicios{
+  @include flex-wrap;
+  margin: 20px ;
+  .box{
+    width: 30% !important;
+    margin-left: 30px;
+    .container_servicios_box {
+      @include flex-wrap;
+      align-items: center;
+      background-color: transparent; 
+      .container_servicios_box_cards{
+        width: map-get($width, 100);
+      }
+    }
+  } 
+}
+
+

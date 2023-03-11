@@ -1,379 +1,397 @@
-@import url(@import url ('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*estas son las variables*/
+/*Estos son los mapas-get*/
+/*estos son los mixins*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  /*reset*/
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
 
-*{
-    /*reset*/
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-  }
-/*selectores de etiqueta 
-  selectores de id
-  selectores de clases */
+/*este es el texto centrado de toda las cards*/
+.card_text {
+  text-align: center; }
 
-
-/*todas las paginas estan escritorio/mobile ( menos contacto que tiene las secciones/div, pero hay que ordenarlas para escritorio/mobile )*/
-
-
-  body{
-    background-color: #333e49a3;
-  }
-
-  header{
-    background-color: #004c96;
-  }
-
-  .redesSociales {
-    width: 100%;
-    padding: 8px 25px;
-    border-bottom: 1px solid white;
-    text-align: right;
-  }
-
-  .redesSociales img {
-    width: 27px;
-    margin: 4px;
-  }
-
-  .container-fluid{
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: flex-end !important;
-  }
-
-  .logo{
-    margin: 20px;
-    width: 120px;
-  }
-
-  .navegacion {
-    margin-left: auto !important; 
-    display: flex !important; 
-    justify-content: space-between !important;  
-    align-items: flex-end !important; 
-  }
-
-  .menu {
-    display: flex !important;
-    justify-content: flex-end !important; 
-    flex-wrap: wrap !important;
-  }
-
-  .menu a {
-    padding: 20px !important;
-    text-decoration: none !important; 
-    color: white !important; 
-    text-align: right !important; 
-    font-weight: bold !important; 
-    text-transform: uppercase !important; 
-  }
-
-  .caratulaservicios{
-    position: relative;
-    width: 100%;
-    height:500px;
-    display: flex;
-    text-align: center;
-  } 
-
-  .anchofoto{
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 50px;
-    color: white;
-  }
-
-  .rowindex{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px ;
-  }
-
-  .card {
-    background-color: transparent;
-  }
-
-  .indexfoto1{
-    margin-left: 55px;
-  }
-
-  .box{
-    width: 30% !important;
-    margin-left: 30px;
-  } 
-
-  .queres{
-    text-align: center;
-  }
-
-  .card.servicios{
-    display: flex;  
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .servicios1{
-    margin: 0;
-    width: 100%;
-    background-color: #001c3784;
-  }
-
-  .servicios1text{
+/*esto es el subtutilo de fondo gris oscuro que se encuentra en la pagina servicios y logistica */
+.texto_importante {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  background-color: #001c3784; }
+  .texto_importante .texto_importante_ser_log {
     text-align: center;
     vertical-align: middle;
     padding: 6%;
     font-size: x-large;
     color: white;
     font-weight: bold;
-    margin: 0;
-  }
+    margin: 0; }
 
-  .log5{
-      justify-content: space-evenly
-  }
+body {
+  background-color: #333e49a3; }
 
-  .bloque2fotoslog{
-    margin-top: 20px;
-  }
-
-  .contenedorsomos{
+header {
+  background-color: #004c96; }
+  header .redesSociales {
     width: 100%;
-    justify-content: center;
-    margin-top: 20px;
-    margin-block-end: 20px;
-  }
+    padding: 8px 25px;
+    border-bottom: 1px solid white;
+    text-align: right; }
+    header .redesSociales img {
+      width: 27px;
+      margin: 4px; }
 
-  form {
+.logo {
+  margin: 20px;
+  width: 120px; }
+
+.container-fluid {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important; }
+  .container-fluid .navegacion {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    margin-left: auto !important; }
+    .container-fluid .navegacion .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end !important; }
+      .container-fluid .navegacion .menu a {
+        padding: 20px !important;
+        text-decoration: none !important;
+        color: white !important;
+        text-align: right !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important; }
+
+.foto_principal {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  text-align: center; }
+  .foto_principal .foto_principal_texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 50px;
+    color: white; }
+
+.foto_principal_img {
+  width: 100%;
+  object-fit: cover; }
+
+.container_index {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px; }
+  .container_index .box {
+    width: 30% !important;
+    margin-left: 30px; }
+    .container_index .box .container_index_card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: transparent; }
+      .container_index .box .container_index_card .container_index_card_foto_1_3 {
+        width: 440px;
+        height: 230px; }
+    .container_index .box .card_text {
+      text-align: center; }
+
+.container_servicios {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px; }
+  .container_servicios .box {
+    width: 30% !important;
+    margin-left: 30px; }
+    .container_servicios .box .container_servicios_box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: transparent; }
+      .container_servicios .box .container_servicios_box .container_servicios_box_cards {
+        width: 100%; }
+
+.container_logistica {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-evenly; }
+  .container_logistica .container_logistica_box {
+    width: 30% !important; }
+    .container_logistica .container_logistica_box .container_logistica_box_card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: transparent; }
+      .container_logistica .container_logistica_box .container_logistica_box_card .container_logistica_box_card_hijo {
+        width: 100%; }
+  .container_logistica .bloque2fotoslog {
+    margin-top: 20px; }
+    .container_logistica .bloque2fotoslog .fotodeposito {
+      height: 295px; }
+
+.contenedor_somos {
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-block-end: 20px; }
+  .contenedor_somos .container_somos_box {
+    width: 30%; }
+    .contenedor_somos .container_somos_box .container_somos_box_card {
+      background-color: transparent; }
+      .contenedor_somos .container_somos_box .container_somos_box_card .quienesfoto {
+        height: 315px; }
+  .contenedor_somos .Container_form {
+    margin-top: 50px;
+    width: 30%; }
+    .contenedor_somos .Container_form .Container_form_queres {
+      color: white;
+      font-weight: bold;
+      border-bottom-style: outset; }
+    .contenedor_somos .Container_form form {
+      background-color: white;
+      border-radius: 3px;
+      color: #999;
+      font-size: 0.8em;
+      padding: 1px;
+      margin: 0 auto;
+      width: 300px; }
+    .contenedor_somos .Container_form .center-content {
+      text-align: center;
+      color: white;
+      background-color: transparent;
+      margin-top: 30px; }
+      .contenedor_somos .Container_form .center-content .Container_form_queres_hijo {
+        font-weight: bold;
+        padding: 5px; }
+      .contenedor_somos .Container_form .center-content .field {
+        border: solid 1px #ccc;
+        padding: 10px;
+        color: rgba(25, 24, 24, 0.841); }
+      .contenedor_somos .Container_form .center-content input, .contenedor_somos .Container_form .center-content textarea {
+        outline: none;
+        width: 280px; }
+      .contenedor_somos .Container_form .center-content .bottom {
+        color: #004c96; }
+      .contenedor_somos .Container_form .center-content .field:focus {
+        border-color: #18a383; }
+
+.contactob, .contactob .mapascontenedor {
+  display: flex;
+  flex-wrap: wrap; }
+  .contactob .mapascontenedor {
+    width: 50%;
+    justify-content: center; }
+    .contactob .mapascontenedor .mapa1 {
+      padding: 20px;
+      margin: 15px 40px 10px 20px; }
+      .contactob .mapascontenedor .mapa1 .mapaimagen {
+        width: 270px;
+        height: 270px;
+        padding: 10px; }
+      .contactob .mapascontenedor .mapa1 h2 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+        border-bottom-style: outset; }
+      .contactob .mapascontenedor .mapa1 p {
+        text-align: center;
+        color: white;
+        font-size: smaller;
+        margin-top: 15px; }
+  .contactob .container_cotizador {
+    text-align: center;
+    padding: 10px; }
+  .contactob .container_cotizador_contacto {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-bottom-style: outset;
+    margin-top: 120px;
+    margin-block-end: 60px; }
+  .contactob .center-content {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    margin-top: 30px; }
+    .contactob .center-content .container_cotizador_contacto_hijo {
+      font-weight: bold;
+      padding: 5px;
+      font-size: medium; }
+  .contactob form, .contactob .mapascontenedor form {
     background-color: white;
     border-radius: 3px;
     color: #999;
     font-size: 0.8em;
     padding: 1px;
     margin: 0 auto;
-    width: 300px;
-  }
-
-  .center-content{
+    width: 300px; }
+  .contactob .center-content {
     text-align: center;
     color: white;
     background-color: transparent;
-  }
+    margin-top: 30px; }
+    .contactob .center-content .Container_form_queres_hijo {
+      font-weight: bold;
+      padding: 5px; }
+    .contactob .center-content .field {
+      border: solid 1px #ccc;
+      padding: 10px;
+      color: rgba(25, 24, 24, 0.841); }
+    .contactob .center-content input, .contactob .center-content textarea {
+      outline: none;
+      width: 280px; }
+    .contactob .center-content .bottom {
+      color: #004c96; }
+    .contactob .center-content .field:focus {
+      border-color: #18a383; }
 
-  .field{
-    border: solid 1px #ccc;
-    padding: 10px;
-    color: white;
-  }
-  
-  input, textarea{
-    outline: none;
-    width: 280px;
-  }
-  
-  .bottom{
-    color: #004c96;
-  }
-
-  .field:focus{
-    border-color: #18a383;
-  }
-
-  .contactob{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .mapascontenedor{
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap; 
-    justify-content: center;
-
-  }
-  .mapascontenedor p, .mapascontenedor h2{
+/* este es el box de newsletter*/
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  background-color: #001c3784; }
+  .newsletter .suscribe {
     text-align: center;
-    font-size: x-small;
-  }
-  .mapa1{
-    padding: 20px;
-    margin: 10px 10px 10px 10px;
-  }
-  
-  .mapa1 h2, .mapa1 p {
     color: white;
-  }
-
-  .mapaimagen{
-    width: 270px;
-    height: 270px;
-  }
-
-  .queres1{
-    text-align: center;
-    padding: 10px;
-  }
-
-  .newsletter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 130px;
-    background-color: #001c3784;
-  }
-
-  .newsletter form {
+    padding: 60px 29px; }
+    .newsletter .suscribe h2 {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin: 0;
+      color: white; }
+  .newsletter .newsletter_form {
     width: 50%;
     background-color: transparent;
     display: flex;
-    margin: 0;
-  }
-  
-  .newsletter input[type=text] {
-    border-radius: 5px;
-    width: 330px;
-  }
-  
-  .newsletter input[type=button] {
-    width: 100px;
-    background-color: #004c96;
-    font-weight: bold;
-    color: white;
-    border: 1px solid #001c37;
-  }
-    
-  .newsletter input[type=button]:hover {
-    background-color: white;
-    color: #004c96;
-    border: 1px solid #001c37;
-  }
+    margin: 0; }
+    .newsletter .newsletter_form input[type=text] {
+      border-radius: 5px;
+      width: 330px; }
+    .newsletter .newsletter_form input[type=button] {
+      width: 100px;
+      background-color: #004c96;
+      font-weight: bold;
+      color: white;
+      border: 1px solid #001c3784; }
+    .newsletter .newsletter_form input[type=button]:hover {
+      background-color: white;
+      color: #004c96;
+      border: 1px solid #001c3784; }
+    .newsletter .newsletter_form .correo_electronico {
+      border: solid 1px #ccc;
+      padding: 10px;
+      color: black; }
 
-  .suscribe {
-    padding: 60px 29px;
-    text-align: center;
-    color: white;
-  }
-  .suscribe h2 {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin: 0;
-    color: white;
-  }
-
-footer{
-    background-color: #004c96;
-  }
-
-  .sucursalesfooter{
+footer {
+  background-color: #004c96; }
+  footer .sucursalesfooter {
     font-size: medium;
     padding: 10px;
     text-decoration: underline;
     color: white;
     text-align: center;
-    text-transform: uppercase;
-  }
-
-  .containerfooter{
+    text-transform: uppercase; }
+  footer .containerfooter {
     width: 100%;
     height: 130px;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
-    }
-
-  .hijocontainerfooter{
-    width: 29%;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    vertical-align: top;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin: 10px 20px;
-    align-self: center;
-    }
-  .textofooterlogo{
-    color: whitesmoke;
-    text-align: center;
-    text-decoration: underline;
-    font: -webkit-small-control;
-  }
-
-  .derechos{
+    justify-content: space-evenly; }
+    footer .containerfooter .hijocontainerfooter {
+      width: 29%;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      vertical-align: top;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin: 10px 20px;
+      align-self: center; }
+      footer .containerfooter .hijocontainerfooter .textofooterlogo {
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: underline;
+        font: -webkit-small-control; }
+  footer .derechos {
     margin: 0;
     font-size: small;
     text-align: center;
-    color: white;
-  }
-
+    color: white; }
 
 @media screen and (max-width: 768px) {
-
-  .servicios1text{
-  font-size: unset ;
-  }
-  .card{
-  flex-direction: column;
-  }
-
-  .indexcards{
-    width: 100%;
-  }
-
-  .indexfoto1{
-    margin: 0;
-  }
-
-  .row{
-    flex-direction: column;
-  }
-
-  .box{
-  width: 100% !important; 
-  margin-left: auto !important; 
-  }
-
-  .servrelax{
-  height: 110px;
-  }
-
-  .textlog{
-  height: 150px;
-  }
-
-  .mapascontenedor{
-    flex-direction: column;
-  }
-
-  .newsletter{
+  /* estas son las media query de utilidades - texto de servicios/logistica */
+  .texto_relax {
+    height: 110px; }
+    .texto_relax .texto_importante_ser_log {
+      font-size: unset; }
+  /* estas son las media query del index */
+  .container_index .box {
+    width: 100% !important;
+    margin-left: auto !important; }
+    .container_index .box .container_index_card {
+      flex-direction: column; }
+      .container_index .box .container_index_card .index_card_foto_1_3 {
+        margin: 0;
+        width: 100%; }
+      .container_index .box .container_index_card .container_index_card_hijo {
+        width: 100%; }
+  /* estas son las media query de servicios*/
+  .container_servicios .box {
+    width: 100% !important;
+    margin-left: auto !important; }
+    .container_servicios .box .card.container_servicios_box_hijo {
+      flex-direction: column; }
+      .container_servicios .box .card.container_servicios_box_hijo .container_servicios_cards {
+        width: 100%; }
+  /* estas son las media query de logistica*/
+  .container_logistica .container_logistica_box {
+    width: 100% !important;
+    margin-left: auto !important; }
+    .container_logistica .container_logistica_box .container_logistica_box_card {
+      flex-direction: column; }
+  /* estas son las media query de somosasap*/
+  .contenedor_somos .container_somos_box {
+    width: 100% !important;
+    margin-left: auto !important; }
+    .contenedor_somos .container_somos_box .container_somos_box_card {
+      flex-direction: column; }
+  .contenedor_somos .Container_form {
+    width: 100%; }
+  /* estas son las media query de contacto */
+  .contactob .mapascontenedor {
+    flex-direction: column; }
+  .contactob .container_cotizador_contacto {
+    margin-top: 20px; }
+  .newsletter {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-  }
-  .suscribe{
-    width: 100%;
-    padding: 10px 25px;
-    text-align: center;
-  }
-
-  .containerfooter{
-    width: 40%;
-  }
-
-  .hijocontainerfooter{
-    align-self: normal;
-    padding: 0cm;
-    }
-    
-  .logo{
-  width: 50px;
-
-  }
+    height: 300px; }
+    .newsletter .suscribe {
+      width: 100%;
+      padding: 10px 25px;
+      text-align: center; }
+    .newsletter .newsletter_form {
+      justify-content: center;
+      margin: 50px; }
+  /* estas son las media query del footer */
+  footer .containerfooter {
+    width: 40%; }
+    footer .containerfooter .hijocontainerfooter {
+      align-self: normal;
+      padding: 0cm; }
+      footer .containerfooter .hijocontainerfooter .logo {
+        width: 50px; } }

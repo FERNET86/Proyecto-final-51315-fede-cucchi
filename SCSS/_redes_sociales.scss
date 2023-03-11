@@ -1,0 +1,13 @@
+header{
+  background-color: map-get($color, color-principal);
+  .redesSociales {
+    width: map-get($width, 100);
+    padding: 8px 25px;
+    border-bottom: 1px solid white;
+    text-align: right;
+    img {
+      width: 27px;
+      margin: 4px;
+  }
+  }
+}

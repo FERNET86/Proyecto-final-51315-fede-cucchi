@@ -1,0 +1,21 @@
+/*estas son las variables*/
+$color-texto: white;
+$color-blanco:white;
+$flex: flex;
+$align-center: center;
+$direction-column: column;
+$font-bold: bold;
+$mar0: 0;
+$pad10px: 10px;
+
+/*Estos son los mapas-get*/
+$color: (
+    color-principal : #004c96,
+    color-secundario : #333e49a3,
+    color-terciario : #001c3784,
+);
+$width: (
+    100 : 100%,
+    50 : 50%,
+    40 : 40%,
+);

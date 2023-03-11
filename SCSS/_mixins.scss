@@ -1,0 +1,16 @@
+/*estos son los mixins*/
+
+@mixin logo{
+    margin: 20px;
+    width: 120px;
+}
+@mixin flex-between-end{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+}
+@mixin flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+

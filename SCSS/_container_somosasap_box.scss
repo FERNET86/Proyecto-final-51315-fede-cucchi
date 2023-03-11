@@ -1,0 +1,60 @@
+.contenedor_somos{
+  width: map-get($width, 100);
+  justify-content: center;
+  margin-top: 20px;
+  margin-block-end: 20px;
+  .container_somos_box{
+    width: 30%;
+    .container_somos_box_card {
+      background-color: transparent;
+      .quienesfoto{
+        height: 315px;
+      }
+    }
+  }
+  .Container_form{
+    margin-top: 50px;
+    width: 30%;
+    .Container_form_queres{
+      color: $color-texto;
+      font-weight: $font-bold;
+      border-bottom-style: outset;
+    }
+    form {
+      background-color: $color-texto;
+      border-radius: 3px;
+      color: #999;
+      font-size: 0.8em;
+      padding: 1px;
+      margin: 0 auto;
+      width: 300px;
+    }
+    .center-content{
+      text-align: $align-center;
+      color: $color-texto;
+      background-color: transparent;
+      margin-top: 30px;
+      .Container_form_queres_hijo{
+        font-weight: $font-bold;
+        padding: 5px;
+      }
+      .field{
+        border: solid 1px #ccc;
+        padding: $pad10px;
+        color: rgba(25, 24, 24, 0.841);
+      }
+      input, textarea{
+        outline: none;
+        width: 280px;
+      }
+      .bottom{
+        color: map-get($color, color-principal);;
+      }
+      .field:focus{
+        border-color: #18a383;
+      }   
+    }
+  }
+}
+
+

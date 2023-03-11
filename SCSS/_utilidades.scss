@@ -1,0 +1,22 @@
+/*este es el texto centrado de toda las cards*/
+
+.card_text{
+    text-align: $align-center;
+}
+
+/*esto es el subtutilo de fondo gris oscuro que se encuentra en la pagina servicios y logistica */
+.texto_importante{
+    height: 100%;
+    margin: $mar0;
+    width: map-get($width, 100);
+    background-color: map-get($color, color-terciario);
+    .texto_importante_ser_log{
+        text-align: $align-center;
+        vertical-align: middle;
+        padding: 6%;
+        font-size: x-large;
+        color: $color-texto;
+        font-weight: $font-bold;
+        margin: $mar0;
+    }
+}

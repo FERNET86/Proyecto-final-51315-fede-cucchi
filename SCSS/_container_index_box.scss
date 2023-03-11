@@ -1,0 +1,25 @@
+.container_index{
+  @include flex-wrap;
+  margin: 20px ;
+  .box{
+    width: 30% !important;
+    margin-left: 30px;
+    .container_index_card {
+      @include flex-wrap;
+      align-items: center;
+      background-color: transparent;
+      .container_index_card_foto_1_3{
+        width: 440px;
+        height: 230px;
+      }    
+    }
+    .card_text{
+      text-align: $align-center;
+    }
+  } 
+}
+
+
+
+
+

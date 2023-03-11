@@ -1,0 +1,20 @@
+.foto_principal{
+    position: relative;
+    width: map-get($width, 100);
+    height:500px;
+    display: $flex;
+    text-align: $align-center;
+    .foto_principal_texto{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: $font-bold;
+        font-size: 50px;
+        color: $color-texto;
+    }
+} 
+.foto_principal_img{
+    width: map-get($width, 100);
+    object-fit: cover;
+}

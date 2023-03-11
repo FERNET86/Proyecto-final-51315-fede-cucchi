@@ -1,0 +1,21 @@
+.container-fluid{
+    @include flex-between-end;
+    .navegacion {
+      @include flex-between-end;
+      margin-left: auto !important; 
+      .menu {
+        @include flex-wrap;
+        justify-content: flex-end !important; 
+        a {
+          padding: 20px !important;
+          text-decoration: none !important; 
+          color: $color-texto !important; 
+          text-align: right !important; 
+          font-weight: $font-bold !important; 
+          text-transform: uppercase !important; 
+          }
+        }
+    }
+  }
+
+  
