@@ -13,9 +13,12 @@
           text-align: right !important; 
           font-weight: $font-bold !important; 
           text-transform: uppercase !important; 
-          }
         }
-    }
+      }  
+      li a:hover {
+        background-color: #024384;
+      }
+    } 
   }
 
   

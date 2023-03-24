@@ -6,10 +6,15 @@
   .container_somos_box{
     width: 30%;
     .container_somos_box_card {
-      background-color: transparent;
+      background-color: $color-blanco;
       .quienesfoto{
         height: 315px;
       }
+    }
+    .card-title{
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
     }
   }
   .Container_form{

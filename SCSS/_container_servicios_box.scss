@@ -1,16 +1,21 @@
 .container_servicios{
   @include flex-wrap;
-  margin: 20px ;
+  margin: 60px 20px ;
   .box{
     width: 30% !important;
     margin-left: 30px;
     .container_servicios_box {
       @include flex-wrap;
       align-items: center;
-      background-color: transparent; 
+      background-color: $color-blanco;
       .container_servicios_box_cards{
         width: map-get($width, 100);
       }
+    }
+    .card-title{
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
     }
   } 
 }

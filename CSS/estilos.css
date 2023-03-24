@@ -66,6 +66,8 @@ header {
         text-align: right !important;
         font-weight: bold !important;
         text-transform: uppercase !important; }
+    .container-fluid .navegacion li a:hover {
+      background-color: #024384; }
 
 .foto_principal {
   position: relative;
@@ -89,7 +91,7 @@ header {
 .container_index {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px; }
+  margin: 60px 20px; }
   .container_index .box {
     width: 30% !important;
     margin-left: 30px; }
@@ -97,17 +99,21 @@ header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      background-color: transparent; }
+      background-color: white; }
       .container_index .box .container_index_card .container_index_card_foto_1_3 {
         width: 440px;
         height: 230px; }
+    .container_index .box .card-title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase; }
     .container_index .box .card_text {
       text-align: center; }
 
 .container_servicios {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px; }
+  margin: 60px 20px; }
   .container_servicios .box {
     width: 30% !important;
     margin-left: 30px; }
@@ -115,14 +121,18 @@ header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      background-color: transparent; }
+      background-color: white; }
       .container_servicios .box .container_servicios_box .container_servicios_box_cards {
         width: 100%; }
+    .container_servicios .box .card-title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase; }
 
 .container_logistica {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 60px 20px;
   justify-content: space-evenly; }
   .container_logistica .container_logistica_box {
     width: 30% !important; }
@@ -130,13 +140,17 @@ header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      background-color: transparent; }
+      background-color: white; }
       .container_logistica .container_logistica_box .container_logistica_box_card .container_logistica_box_card_hijo {
         width: 100%; }
+    .container_logistica .container_logistica_box .card-title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase; }
   .container_logistica .bloque2fotoslog {
     margin-top: 20px; }
     .container_logistica .bloque2fotoslog .fotodeposito {
-      height: 295px; }
+      height: 292px; }
 
 .contenedor_somos {
   width: 100%;
@@ -146,9 +160,13 @@ header {
   .contenedor_somos .container_somos_box {
     width: 30%; }
     .contenedor_somos .container_somos_box .container_somos_box_card {
-      background-color: transparent; }
+      background-color: white; }
       .contenedor_somos .container_somos_box .container_somos_box_card .quienesfoto {
         height: 315px; }
+    .contenedor_somos .container_somos_box .card-title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase; }
   .contenedor_somos .Container_form {
     margin-top: 50px;
     width: 30%; }
@@ -340,7 +358,8 @@ footer {
   /* estas son las media query del index */
   .container_index .box {
     width: 100% !important;
-    margin-left: auto !important; }
+    margin-left: auto !important;
+    margin-block-end: 30px; }
     .container_index .box .container_index_card {
       flex-direction: column; }
       .container_index .box .container_index_card .container_index_card_foto_1_3 {
@@ -352,15 +371,15 @@ footer {
   /* estas son las media query de servicios*/
   .container_servicios .box {
     width: 100% !important;
-    margin-left: auto !important; }
+    margin-left: auto !important;
+    margin-block-end: 30px; }
     .container_servicios .box .card.container_servicios_box_hijo {
       flex-direction: column; }
-      .container_servicios .box .card.container_servicios_box_hijo .container_servicios_cards {
-        width: 100%; }
   /* estas son las media query de logistica*/
   .container_logistica .container_logistica_box {
     width: 100% !important;
-    margin-left: auto !important; }
+    margin-left: auto !important;
+    margin-block-end: 50px; }
     .container_logistica .container_logistica_box .container_logistica_box_card {
       flex-direction: column; }
   /* estas son las media query de somosasap*/

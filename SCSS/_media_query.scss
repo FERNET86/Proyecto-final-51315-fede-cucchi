@@ -16,6 +16,7 @@
     .box{
         width: map-get($width, 100) !important;  
         margin-left: auto !important; 
+        margin-block-end: 30px;
         .container_index_card{
             flex-direction: $direction-column;
             .container_index_card_foto_1_3{
@@ -37,11 +38,9 @@
     .box{
         width: map-get($width, 100) !important;  
         margin-left: auto !important; 
+        margin-block-end: 30px;
         .card.container_servicios_box_hijo{
             flex-direction: $direction-column;
-                .container_servicios_cards{
-                    width: map-get($width, 100);
-                } 
             }    
         }
     } 
@@ -53,6 +52,7 @@
     .container_logistica_box{
         width: map-get($width, 100) !important;  
         margin-left: auto !important; 
+        margin-block-end: 50px;
         .container_logistica_box_card{
             flex-direction: $direction-column;
             }    
